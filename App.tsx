@@ -1,9 +1,14 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { Text } from 'react-native';
-
+import { NavigationContainer } from '@react-navigation/native';
+import { MenuLateral } from './src/Empleadores/navigation/MenuLateral';
+// import { MenuLateralT } from './src/Trabajadores/navigation/MenuLateralT';
+// import { StackAuth } from './src/Auth/navigation/StackAuth';
 const App = () => {
   return (
-    <Text>Hola App Mexi creando la estructura de directorio</Text>
+    <NavigationContainer>
+      <MenuLateral/>
+    </NavigationContainer>
   );
 };
 
